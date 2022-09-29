@@ -1,9 +1,9 @@
---Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+--AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz.
 
---1) actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım.
---2) actor ve customer tablolarında bulunan first_name sütunları için kesişen verileri sıralayalım.
---3) actor ve customer tablolarında bulunan first_name sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.
---4) İlk 3 sorguyu tekrar eden veriler için de yapalım.
+--1) actor ve customer tablolarÄ±nda bulunan first_name sÃ¼tunlarÄ± iÃ§in tÃ¼m verileri sÄ±ralayalÄ±m.
+--2) actor ve customer tablolarÄ±nda bulunan first_name sÃ¼tunlarÄ± iÃ§in kesiÅŸen verileri sÄ±ralayalÄ±m.
+--3) actor ve customer tablolarÄ±nda bulunan first_name sÃ¼tunlarÄ± iÃ§in ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sÄ±ralayalÄ±m.
+--4) Ä°lk 3 sorguyu tekrar eden veriler iÃ§in de yapalÄ±m.
 
 1) (SELECT first_name FROM actor)
 UNION
@@ -28,4 +28,4 @@ INTERSECT ALL
 (SELECT first_name FROM actor)
 EXCEPT ALL
 (SELECT first_name FROM customer);
-```
+
