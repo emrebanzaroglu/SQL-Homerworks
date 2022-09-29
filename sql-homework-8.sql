@@ -1,7 +1,7 @@
---1) test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
---2) Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
---3) Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
---4) Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+--1) test veritabanÃ½nÃ½zda employee isimli sÃ¼tun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluÃ¾turalÃ½m.
+--2) OluÃ¾turduÃ°umuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+--3) SÃ¼tunlarÃ½n her birine gÃ¶re diÃ°er sÃ¼tunlarÃ½ gÃ¼ncelleyecek 5 adet UPDATE iÃ¾lemi yapalÃ½m.
+--4) SÃ¼tunlarÃ½n her birine gÃ¶re ilgili satÃ½rÃ½ silecek 5 adet DELETE iÃ¾lemi yapalÃ½m.
 
 
 1) CREATE TABLE employee (
@@ -68,4 +68,4 @@ WHERE id < 6;
 
 4) DELETE FROM employee
 WHERE id<6;
-```
+
