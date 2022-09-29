@@ -1,9 +1,9 @@
---Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+--AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz.
 
---1) film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
---2) film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
---3) customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir? 
---4) city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+--1) film tablosunda bulunan filmleri rating deÄŸerlerine gÃ¶re gruplayÄ±nÄ±z.
+--2) film tablosunda bulunan filmleri replacement_cost sÃ¼tununa gÃ¶re grupladÄ±ÄŸÄ±mÄ±zda film sayÄ±sÄ± 50 den fazla olan replacement_cost deÄŸerini ve karÅŸÄ±lÄ±k gelen film sayÄ±sÄ±nÄ± sÄ±ralayÄ±nÄ±z.
+--3) customer tablosunda bulunan store_id deÄŸerlerine karÅŸÄ±lÄ±k gelen mÃ¼ÅŸteri sayÄ±larÄ±nÄ± nelerdir? 
+--4) city tablosunda bulunan ÅŸehir verilerini country_id sÃ¼tununa gÃ¶re gruplandÄ±rdÄ±ktan sonra en fazla ÅŸehir sayÄ±sÄ± barÄ±ndÄ±ran country_id bilgisini ve ÅŸehir sayÄ±sÄ±nÄ± paylaÅŸÄ±nÄ±z.
 
 
 1) SELECT rating,COUNT(*) FROM film GROUP BY rating;
@@ -13,4 +13,4 @@
 3) SELECT store_id,COUNT(*) FROM customer GROUP BY store_id;
 
 4) SELECT country_id,COUNT(*) FROM city GROUP BY country_id ORDER BY COUNT(*) DESC LIMIT 1;
-```
+
