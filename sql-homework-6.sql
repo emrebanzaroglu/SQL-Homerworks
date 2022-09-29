@@ -1,9 +1,9 @@
---Aþaðýdaki sorgu senaryolarýný dvdrental örnek veri tabaný üzerinden gerçekleþtiriniz.
+--AÅŸaÄŸÄ±daki sorgu senaryolarÄ±nÄ± dvdrental Ã¶rnek veri tabanÄ± Ã¼zerinden gerÃ§ekleÅŸtiriniz.
 
---1) film tablosunda bulunan rental_rate sütunundaki deðerlerin ortalamasý nedir?
---2) film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile baþlar?
---3) film tablosunda bulunan filmlerden rental_rate deðeri 0.99 a eþit olan en uzun (length) film kaç dakikadýr?
---4) film tablosunda bulunan filmlerin uzunluðu 150 dakikadan büyük olanlarýna ait kaç farklý replacement_cost deðeri vardýr?
+--1) film tablosunda bulunan rental_rate sÃ¼tunundaki deÄŸerlerin ortalamasÄ± nedir?
+--2) film tablosunda bulunan filmlerden kaÃ§ tanesi 'C' karakteri ile baÅŸlar?
+--3) film tablosunda bulunan filmlerden rental_rate deÄŸeri 0.99 a eÅŸit olan en uzun (length) film kaÃ§ dakikadÄ±r?
+--4) film tablosunda bulunan filmlerin uzunluÄŸu 150 dakikadan bÃ¼yÃ¼k olanlarÄ±na ait kaÃ§ farklÄ± replacement_cost deÄŸeri vardÄ±r?
 
 
 1) SELECT AVG(rental_rate) FROM film;
@@ -13,4 +13,4 @@
 3) SELECT MAX(length) FROM film WHERE rental_rate = 0.99;
 
 4) SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE length > 150;
-```
+
