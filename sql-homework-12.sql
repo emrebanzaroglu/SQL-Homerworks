@@ -1,10 +1,9 @@
---Aþaðýdaki sorgu senaryolarýný dvdrental örnek veri tabaný üzerinden gerçekleþtiriniz.
+--Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
 
---1) film tablosunda film uzunluðu length sütununda gösterilmektedir. Uzunluðu ortalama film uzunluðundan fazla kaç tane film vardýr?
---2) film tablosunda en yüksek rental_rate deðerine sahip kaç tane film vardýr?
---3) film tablosunda en düþük rental_rate ve en düþük replacement_cost deðerlerine sahip filmleri sýralayýnýz.
---4) payment tablosunda en fazla sayýda alýþveriþ yapan müþterileri(customer) sýralayýnýz.
-
+--1) film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
+--2) film tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
+--3) film tablosunda en düşük rental_rate ve en düşük replacement_cost değerlerine sahip filmleri sıralayınız.
+--4) payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
 
 1) SELECT COUNT(*) FROM film
 WHERE length > (SELECT AVG(length) FROM film);
